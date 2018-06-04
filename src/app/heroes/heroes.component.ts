@@ -20,6 +20,7 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
+  // plus utilise(binding remplace par des liens), laisse pour montrer comment faire avec (<li *ngFor="let hero of heroes"[class.selected]="hero === selectedHero"(click)="onSelect(hero)">)
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
